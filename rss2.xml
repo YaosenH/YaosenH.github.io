@@ -9,8 +9,31 @@
     <atom:link href="http://v2better.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Just One Blog</description>
-    <pubDate>Tue, 28 May 2024 09:30:28 GMT</pubDate>
+    <pubDate>Sat, 07 Sep 2024 02:46:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>blockchain</title>
+      <link>http://v2better.top/2024/06/26/blockchain/</link>
+      <guid>http://v2better.top/2024/06/26/blockchain/</guid>
+      <pubDate>Tue, 25 Jun 2024 16:21:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;基于堆栈的语言，比如forth：&quot;&gt;&lt;a href=&quot;#基于堆栈的语言，比如forth：&quot; class=&quot;headerlink&quot; title=&quot;基于堆栈的语言，比如forth：&quot;&gt;&lt;/a&gt;基于堆栈的语言，比如forth：&lt;/h2&gt;&lt;p&gt;示例代码&lt;/p&gt;
+&lt;p&gt;以F</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="基于堆栈的语言，比如forth："><a href="#基于堆栈的语言，比如forth：" class="headerlink" title="基于堆栈的语言，比如forth："></a>基于堆栈的语言，比如forth：</h2><p>示例代码</p><p>以Forth为例，展示一个简单的加法操作：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3 4 + .</span><br></pre></td></tr></table></figure><p>上述代码的解释是：</p><ol><li>将数字3推入堆栈。</li><li>将数字4推入堆栈。</li><li>执行加法操作，将堆栈顶部的两个数字相加，并将结果（7）推回堆栈。</li><li><code>.</code> 操作符从堆栈中取出并打印结果。</li></ol><h2 id="图灵不完备"><a href="#图灵不完备" class="headerlink" title="图灵不完备"></a>图灵不完备</h2><p>  比特币交易脚本语言包含许多运算符，但在一个重要方面有意限制——它没有循环或复杂的流程控制能力，除了条件流程控制。这确保了该语言不是图灵完备的，也就是说，脚本具有有限的复杂性和可预测的执行时间。</p><h2 id="图灵完备"><a href="#图灵完备" class="headerlink" title="图灵完备"></a>图灵完备</h2><p>  图灵完备是指在可计算性理论里，如果一系列操作数据的规则（如指令集、编程语言、细胞自动机）按照一定的顺序，可以计算出结果<br>  在给定无限内存的情况下，以太坊可以计算任何图灵机可以计算的算法。”<br>  图灵完备带来运算方便性的同时，也带来安全和资源管理问题。“陷入死循环的打印机可以关闭并再次打开，但是这对于公共区块链却是不可能的”。ETH通过gas机制在保证图灵完备的的同时，限制了程序可以使用的资源量。</p><h2 id="比特币中输入和输出的理解"><a href="#比特币中输入和输出的理解" class="headerlink" title="比特币中输入和输出的理解"></a>比特币中输入和输出的理解</h2><p>  比特币中输入和输出，其主语（对象）是一个交易（TX）</p><p><img src="/img/20190905104834923.jpeg" alt="20190905104834923"></p><h2 id="UTXO（Unspent-Transaction-Output，未花费交易输出）"><a href="#UTXO（Unspent-Transaction-Output，未花费交易输出）" class="headerlink" title="UTXO（Unspent Transaction Output，未花费交易输出）"></a>UTXO（Unspent Transaction Output，未花费交易输出）</h2><p>  每一笔TX都会消耗一个或多个UTXO，生成一个或多个UTXO<br>  交易输入（input）引用之前交易的UTXO<br>  交易输出（output）生成新的UTXO<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">以下展示TX示例 </span><br><span class="line">（1）A与B交易（忽略手续费）</span><br><span class="line">输入：</span><br><span class="line">    引用了A持有的含有5个BTC的UTXO</span><br><span class="line">输出：</span><br><span class="line">    2个BTC发给B（新UTXO，归B持有）</span><br><span class="line">    找零3个BTC（新UTXO，仍归A持有）</span><br><span class="line">    </span><br><span class="line">（2）合并UTXO操作（忽略手续费）</span><br><span class="line">输入：</span><br><span class="line">    A的3个UTXO，分别含有0.5，1.5，3个BTC</span><br><span class="line">输出：</span><br><span class="line">    一个含5个BTC的UTXO（归A持有）</span><br></pre></td></tr></table></figure></p><p>《精通比特币 第三版》原文：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用比特币的区块链存储与比特币支付无关的数据是一个颇具争议的议题。许多人认为这种使用是滥用的，希望予以遏制。而另一些人则将其视为区块链技术强大功能的展示，并希望鼓励这种实验。反对包含非支付数据的人士认为，这给运行完整比特币节点的人带来了负担，因为他们需要承担为区块链不打算承载的数据而进行的磁盘存储成本。此外，这样的交易可能会创建无法被花费的UTXO，使用传统比特币地址作为自由格式的20字节字段。由于该地址用于存储数据，它不对应于私钥，因此生成的UTXO永远无法被花费；这是一个虚假的支付。因此，永远无法被花费的这些交易从未从UTXO集中移除，并导致UTXO数据库的大小永远增加，或者说“膨胀”。</span><br></pre></td></tr></table></figure><p>  我的理解是，UTXO被花费并不能缓解数据膨胀，因为根据UTXO的特点，UTXO被花费后会生成一个或多个UTXO，UTXO数据库仍然是膨胀的。与原文想法相同的是，无法花费的“虚假”UTXO应被存储在区块链中而不是UTXO数据库中。<br>  解决方式是引入OP_RETURN，OP_RETURN脚本没有对应的输入，因此无法用于花费</p><h2 id="有效区块的特征"><a href="#有效区块的特征" class="headerlink" title="有效区块的特征"></a>有效区块的特征</h2><p>• 区块数据结构在语法上是有效的。 </p><p>• 区块头哈希小于目标值（实施工作证明）。</p><p>• 区块时间戳位于 MTP 和未来两小时之间（允许时间误差）。</p><p>• 区块权重在可接受范围内。 </p><p>• 第一个交易（仅第一个）是 coinbase 交易。 </p><p>• 区块中的所有交易都使用“交易独立验证”部分讨论的交易清单进行验证。</p><h2 id="区块确认时间为何是10分钟"><a href="#区块确认时间为何是10分钟" class="headerlink" title="区块确认时间为何是10分钟"></a>区块确认时间为何是10分钟</h2><ol><li>若每个区块确认时间过短，会导致安全性降低：当区块生成时间缩短时，网络节点之间同步区块的时间变少，导致多个矿工可能同时挖出有效区块。这样会增加意外分叉的发生率，导致一些矿工的工作被浪费。</li><li>若每个区块确认时间过长：诚然，安全性会变高；但是会导致交易确认延迟，区块吞吐量下降等问题</li></ol>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://v2better.top/2024/06/26/blockchain/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>深度学习预测前置知识</title>
@@ -242,32 +265,6 @@
       
       
       <comments>http://v2better.top/2022/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>文章</title>
-      <link>http://v2better.top/2022/05/10/%E6%96%87%E7%AB%A0/</link>
-      <guid>http://v2better.top/2022/05/10/%E6%96%87%E7%AB%A0/</guid>
-      <pubDate>Tue, 10 May 2022 07:02:41 GMT</pubDate>
-      
-        
-        
-      <description>&lt;hr&gt;
-&lt;p&gt;l&lt;/p&gt;
-&lt;p&gt;路漫漫其修远兮，吾将上下而求索&lt;/p&gt;
-&lt;p&gt;Where there is a will, there is a way&lt;/p&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<hr><p>l</p><p>路漫漫其修远兮，吾将上下而求索</p><p>Where there is a will, there is a way</p>]]></content:encoded>
-      
-      
-      
-      
-      <comments>http://v2better.top/2022/05/10/%E6%96%87%E7%AB%A0/#disqus_thread</comments>
       
     </item>
     
