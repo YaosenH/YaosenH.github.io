@@ -3,12 +3,12 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Yochum</title>
+    <title>Way2BeBetter</title>
     <link>http://v2better.top/</link>
     
     <atom:link href="http://v2better.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
-    <description>Just One Blog</description>
+    <description>Just A Blog</description>
     <pubDate>Sat, 07 Sep 2024 02:46:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     

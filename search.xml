@@ -226,27 +226,6 @@
     
     
     <entry>
-      <title>Servlet</title>
-      <link href="/2022/05/10/Servlet/"/>
-      <url>/2022/05/10/Servlet/</url>
-      
-        <content type="html"><![CDATA[<span id="more"></span><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p><img src="/img/servlet1.png" alt></p><h1 id="Servlet生命周期"><a href="#Servlet生命周期" class="headerlink" title="Servlet生命周期"></a>Servlet生命周期</h1><p><img src="/img/servlet2.png" alt>  </p><h1 id="HTTPServlet使用步骤及原理"><a href="#HTTPServlet使用步骤及原理" class="headerlink" title="HTTPServlet使用步骤及原理"></a>HTTPServlet使用步骤及原理</h1><p><img src="/img/servlet3.png" alt>  </p><h1 id="urlPattern配置"><a href="#urlPattern配置" class="headerlink" title="urlPattern配置"></a>urlPattern配置</h1><p><img src="/img/servlet4.png" alt>  </p><h2 id="Servlet-urlPattern配置规则"><a href="#Servlet-urlPattern配置规则" class="headerlink" title="Servlet urlPattern配置规则"></a>Servlet urlPattern配置规则</h2><p><img src="/img/servlet5.png" alt><br>当配置规则同时满足精确匹配和目录匹配时，会优先使用精确匹配  </p><h1 id="XML配置Servlet"><a href="#XML配置Servlet" class="headerlink" title="XML配置Servlet"></a>XML配置Servlet</h1>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> JavaWeb </tag>
-            
-            <tag> Servlet </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Tomcat</title>
       <link href="/2022/05/10/Tomcat/"/>
       <url>/2022/05/10/Tomcat/</url>
@@ -287,6 +266,27 @@
           
       </categories>
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Servlet</title>
+      <link href="/2022/05/10/Servlet/"/>
+      <url>/2022/05/10/Servlet/</url>
+      
+        <content type="html"><![CDATA[<span id="more"></span><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p><img src="/img/servlet1.png" alt></p><h1 id="Servlet生命周期"><a href="#Servlet生命周期" class="headerlink" title="Servlet生命周期"></a>Servlet生命周期</h1><p><img src="/img/servlet2.png" alt>  </p><h1 id="HTTPServlet使用步骤及原理"><a href="#HTTPServlet使用步骤及原理" class="headerlink" title="HTTPServlet使用步骤及原理"></a>HTTPServlet使用步骤及原理</h1><p><img src="/img/servlet3.png" alt>  </p><h1 id="urlPattern配置"><a href="#urlPattern配置" class="headerlink" title="urlPattern配置"></a>urlPattern配置</h1><p><img src="/img/servlet4.png" alt>  </p><h2 id="Servlet-urlPattern配置规则"><a href="#Servlet-urlPattern配置规则" class="headerlink" title="Servlet urlPattern配置规则"></a>Servlet urlPattern配置规则</h2><p><img src="/img/servlet5.png" alt><br>当配置规则同时满足精确匹配和目录匹配时，会优先使用精确匹配  </p><h1 id="XML配置Servlet"><a href="#XML配置Servlet" class="headerlink" title="XML配置Servlet"></a>XML配置Servlet</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> JavaWeb </tag>
+            
+            <tag> Servlet </tag>
+            
+        </tags>
       
     </entry>
     
