@@ -186,6 +186,19 @@
     
     
     <entry>
+      <title>文章</title>
+      <link href="/2022/05/10/%E6%96%87%E7%AB%A0/"/>
+      <url>/2022/05/10/%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<hr><p>l</p><p>路漫漫其修远兮，吾将上下而求索</p><p>Where there is a will, there is a way</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HTTP</title>
       <link href="/2022/05/10/HTTP/"/>
       <url>/2022/05/10/HTTP/</url>
@@ -261,25 +274,6 @@
     
     
     <entry>
-      <title>C++面向对象</title>
-      <link href="/2022/05/10/c++/"/>
-      <url>/2022/05/10/c++/</url>
-      
-        <content type="html"><![CDATA[<span id="more"></span><h1 id="友元"><a href="#友元" class="headerlink" title="友元"></a>友元</h1><p>友元可以访问类内所有成员<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">void func();</span><br><span class="line">class A&#123;</span><br><span class="line">friend void func();</span><br><span class="line">&#125;;</span><br><span class="line">```  </span><br><span class="line"># 继承</span><br><span class="line">派生类不能继承：析构函数，基类的友元函数，静态数据成员，静态成员函数  </span><br><span class="line">private：只能本类访问  </span><br><span class="line">protected：可以本类，派生类访问  </span><br><span class="line">public：可以本类，派生类，类外访问  </span><br></pre></td></tr></table></figure><br>class Animal;<br>class Cat;<br>class Cat:protected Animal{<br>};<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">c++的继承方式可分为公有继，保护继承和私有继承  </span><br><span class="line">c++默认继承方式位private继承  </span><br><span class="line">public继承  </span><br><span class="line">基类的访问权限在派生类中保持不变  </span><br><span class="line">private继承  </span><br><span class="line">基类的private成员在派生类中仍是private成员，但基类的protected和public成员在派生类中会变成private成员  </span><br><span class="line">protected继承  </span><br><span class="line">基类中的public成员在派生类中修改为protected成员，protected和private成员保持不变  </span><br><span class="line">## 阻止继承</span><br></pre></td></tr></table></figure><br>class Cat final{<br>};<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">可以用final关键字阻止该类被继承</span><br><span class="line">## 重载重定义</span><br><span class="line">重载：要求函数具有不同的函数原型  </span><br><span class="line">重定义（重写or覆盖）：指派生类可以定义与基类具有相同函数原型的成员函数  </span><br><span class="line">## 派生类修改基类成员的访问权限</span><br><span class="line">如  </span><br></pre></td></tr></table></figure><br>class Animal{<br>    protected:<br>    void jump() {<br>        cout &lt;&lt; “跳” &lt;&lt; endl;<br>    }<br>};<br>class Cat:protected Animal{<br>    public:<br>        using Animal::jump;//修改jump权限为public<br>}<br>```  </p><p><font color="#FF66CC">private成员永远只能被它内部的成员访问</font><br>因此不允许派生类使用using改变private成员的访问权限<br>注：由于继承导致的权限变化不算入其中  </p>]]></content>
-      
-      
-      <categories>
-          
-          <category> c++ </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>git</title>
       <link href="/2022/05/10/git/"/>
       <url>/2022/05/10/git/</url>
@@ -320,19 +314,6 @@
             <tag> MyBatis </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>文章</title>
-      <link href="/2022/05/10/%E6%96%87%E7%AB%A0/"/>
-      <url>/2022/05/10/%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[<hr><p>l</p><p>路漫漫其修远兮，吾将上下而求索</p><p>Where there is a will, there is a way</p>]]></content>
-      
-      
       
     </entry>
     
@@ -383,6 +364,25 @@
             <tag> 组成原理 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++面向对象</title>
+      <link href="/2022/05/10/c++/"/>
+      <url>/2022/05/10/c++/</url>
+      
+        <content type="html"><![CDATA[<span id="more"></span><h1 id="友元"><a href="#友元" class="headerlink" title="友元"></a>友元</h1><p>友元可以访问类内所有成员<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">void func();</span><br><span class="line">class A&#123;</span><br><span class="line">friend void func();</span><br><span class="line">&#125;;</span><br><span class="line">```  </span><br><span class="line"># 继承</span><br><span class="line">派生类不能继承：析构函数，基类的友元函数，静态数据成员，静态成员函数  </span><br><span class="line">private：只能本类访问  </span><br><span class="line">protected：可以本类，派生类访问  </span><br><span class="line">public：可以本类，派生类，类外访问  </span><br></pre></td></tr></table></figure><br>class Animal;<br>class Cat;<br>class Cat:protected Animal{<br>};<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">c++的继承方式可分为公有继，保护继承和私有继承  </span><br><span class="line">c++默认继承方式位private继承  </span><br><span class="line">public继承  </span><br><span class="line">基类的访问权限在派生类中保持不变  </span><br><span class="line">private继承  </span><br><span class="line">基类的private成员在派生类中仍是private成员，但基类的protected和public成员在派生类中会变成private成员  </span><br><span class="line">protected继承  </span><br><span class="line">基类中的public成员在派生类中修改为protected成员，protected和private成员保持不变  </span><br><span class="line">## 阻止继承</span><br></pre></td></tr></table></figure><br>class Cat final{<br>};<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">可以用final关键字阻止该类被继承</span><br><span class="line">## 重载重定义</span><br><span class="line">重载：要求函数具有不同的函数原型  </span><br><span class="line">重定义（重写or覆盖）：指派生类可以定义与基类具有相同函数原型的成员函数  </span><br><span class="line">## 派生类修改基类成员的访问权限</span><br><span class="line">如  </span><br></pre></td></tr></table></figure><br>class Animal{<br>    protected:<br>    void jump() {<br>        cout &lt;&lt; “跳” &lt;&lt; endl;<br>    }<br>};<br>class Cat:protected Animal{<br>    public:<br>        using Animal::jump;//修改jump权限为public<br>}<br>```  </p><p><font color="#FF66CC">private成员永远只能被它内部的成员访问</font><br>因此不允许派生类使用using改变private成员的访问权限<br>注：由于继承导致的权限变化不算入其中  </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> c++ </category>
+          
+      </categories>
+      
       
     </entry>
     
